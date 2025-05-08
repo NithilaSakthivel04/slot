@@ -1,5 +1,5 @@
 # Ex03 Time Table
-## Date:23/4/2025
+## Date: 08/05/25
 
 ## AIM
 To write a html webpage page to display your slot timetable.
@@ -24,106 +24,136 @@ Add your timetable using ```<td>``` tag.
 Execute the program using runserver command.
 
 ## PROGRAM
-```<html>
-    <head>
-        <style>
-            td
-            {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <img src="/static/logo.png" height="93" weight="500">
-        <table border="6" cellspacing="6" cellpadding="10" bgcolor="green">
-            <br>
-            <br>
-            <caption align="top">SLOT TIME TABLE - RITHIKA(24900841)</caption>
-            <tr>
-                <th bgcolor="yellow">Day\Time</th>
-                <th bgcolor="yellow">Monday</th>
-                <th bgcolor="yellow">Tuesday</th>
-                <th bgcolor="yellow">Wednesday</th>
-                <th bgcolor="yellow">Thursday</th>
-                <th bgcolor="yellow">Friday</th>
-                
-            </tr>
-            <tr>
-                <td bgcolor="yellow">8-10</td>
-                <td colspan="3">FREE SLOT</td>
-                <td>PHY</td>
-                <td>CE</td>
-            </tr>
-            <tr>
-                <td bgcolor="yellow">10-12</td>
-                <td>GRE</td>
-                <td>FREE SLOT</td>
-                <td>FWAD</td>
-                <td>FWAD</td>
-                <td>PHY</td>
-            </tr>
-            <tr>
-                <td bgcolor="yellow">12-1</td>
-                <td colspan="5">LUNCH</td>
-            </tr>
-            <tr>
-                <td bgcolor="yellow">1-3</td>
-                <td colspan="2">FREE SLOT</td>
-                <td>MAT</td>
-                <td>MAT</td>
-                <td>CD</td>
-            </tr>
-            <tr>
-                <td bgcolor="yellow">3-5</td>
-                <td colspan="2">FREE SLOT</td>
-                <td>fc</td>
-                <td>CE</td>
-                <td>FWAD</td>
-            </tr>
-        </table>
-        <br>
-        <table border="3" cellspacing="5" cellpadding="10">
-            <tr>
-                <th>S.No.</th>
-                <th>Subject Code</th>
-                <th>Subject Name</th>
-            </tr>
-            <tr>
-                <td>1.</td>
-                <td>19AI414</td>
-                <td>Fundamental Application of Web Development(FWAD)</td>
-            </tr>
-            <tr>
-                <td>2.</td>
-                <td>19EN612</td>
-                <td>Fundamental OF c (fc)</td>
-            </tr>
-            <tr>
-                <td>3.</td>
-                <td>19PH206</td>
-                <td>Physics For Infomation Technology(PHY)</td>
-            </tr>
-            <tr>
-                <td>4.</td>
-                <td>19CY205</td>
-                <td>communicative english(CE)</td>
-            </tr>
-            <tr>
-                <td>5.</td>
-                <td>19MA201</td>
-                <td>Calculus and Matrix Algebra(MAT)</td>
-            </tr>
-            <tr>
-                <td>6.</td>
-                <td>19EY701</td>
-                <td>career development(CD)</td>
-            </tr>
-        </table>
-   </body>
+~~~
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SLOT TIME TABLE - your name , reg no</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 5px auto;
+        }
+
+        table + table {
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 5px solid Black;
+            text-align: center;
+            padding: 8px;
+        }
+
+        img {
+            width: 100%;
+            height: 15%;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+        
+        strong {
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png">
+    <div class="center-text">
+        <p><strong>SLOT TIME TABLE - V.B.LAKSHA (212224220051) </strong></p>
+    </div>
+    <table>
+        <tr>
+            <th colspan="1" bgcolor="Yellow">Day/Time</th>
+            <th colspan="1" bgcolor="Yellow">Monday</th>
+            <th colspan="1" bgcolor="Yellow">Tuesday</th>
+            <th colspan="1" bgcolor="Yellow">Wednesday</th>
+            <th colspan="1" bgcolor="Yellow">Thursday</th>
+            <th colspan="1" bgcolor="Yellow">Friday</th>
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="Yellow">8-10</th>
+            <th colspan="3" bgcolor="Cyan">FREE SLOT</th>
+            <th colspan="1" bgcolor="Cyan">PHY</th>
+            <th colspan="1" bgcolor="Cyan">CHE</th>
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="Yellow">10-12</th>
+            <th colspan="1" bgcolor="Cyan">GER</th>
+            <th colspan="1" bgcolor="Cyan">FREE SLOT</th>
+            <th colspan="1" bgcolor="Cyan">FWAD</th>
+            <th colspan="1" bgcolor="Cyan">FWAD</th>
+            <th colspan="1" bgcolor="Cyan">PHY</th>
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="Yellow">12-1</th>
+            <th colspan="5" bgcolor="Cyan">LUNCH</th>
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="Yellow">1-3</th>
+            <th colspan="2" bgcolor="Cyan">FREE SLOT</th>
+            <th colspan="1" bgcolor="Cyan">MAT</th>
+            <th colspan="1" bgcolor="Cyan">MAT</th>
+            <th colspan="1" bgcolor="Cyan">SS</th>
+        </tr>
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="Yellow">3-5</th>
+            <th colspan="2" bgcolor="Cyan">FREE SLOT</th>
+            <th colspan="1" bgcolor="Cyan">GER</th>
+            <th colspan="1" bgcolor="Cyan">CHE</th>
+            <th colspan="1" bgcolor="Cyan">FWAD</th>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th colspan="1" bgcolor="White">S. No.</th>
+            <th colspan="1" bgcolor="White">Subject Code</th>
+            <th colspan="2" bgcolor="White">Subject Name</th>
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="White">1.</th>
+            <th colspan="1" bgcolor="White">19AI41</th>
+            <th colspan="2" bgcolor="White">Fundamentals of Web Application Development(FWAD)</th>
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="White">2.</th>
+            <th colspan="1" bgcolor="White">19EN612</th>
+            <th colspan="2" bgcolor="White">German Basic (GER)</th>        
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="White">3.</th>
+            <th colspan="1" bgcolor="White">19PH206</th>
+            <th colspan="2" bgcolor="White">Physics for Information Technology (PHY)</th> 
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="White">4.</th>
+            <th colspan="1" bgcolor="White">19CY205</th>
+            <th colspan="2" bgcolor="White">Principles of Chemistry in Engineering (CHE)</th> 
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="White">5.</th>
+            <th colspan="1" bgcolor="White">19MA201</th>
+            <th colspan="2" bgcolor="White">Calculus and Matrix Algebra (MAT)</th> 
+        </tr>
+        <tr>
+            <th colspan="1" bgcolor="White">6.</th>
+            <th colspan="1" bgcolor="White">19EY701</th>
+            <th colspan="2" bgcolor="White">Soft Skills (SS)</th> 
+        </tr>
+           </table>
+</body>
 </html>
-```
+~~~
 
 ## OUTPUT
-!(<Screenshot 2025-04-23 092645-1.png>)
+![Screenshot 2025-04-26 142911](https://github.com/user-attachments/assets/0813080d-2087-4965-8cb9-804e14e7b718)
+
+
 ## RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
